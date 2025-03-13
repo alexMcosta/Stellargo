@@ -23,7 +23,7 @@ jobs:
       - name: Get Qodana config
         run: |
           git clone https://github.com/alexMcosta/qodana-configs.git
-          mv qodana-config/go-qodana.yaml qodana.yaml
+          mv qodana-configs/go-qodana.yaml qodana.yaml
           
       - name: 'Qodana Scan'
         uses: JetBrains/qodana-action@v2024.3
